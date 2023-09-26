@@ -1,5 +1,5 @@
 import React from "react";
-// import './BannerCard.css'
+import './BannerCard.css'
 const BannerCard = ({ title, content }) => {
   return (
     <div className="features-post">
