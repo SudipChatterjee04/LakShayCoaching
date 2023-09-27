@@ -8,6 +8,7 @@ import VideoSection from "../components/VideoSection/VideoSection";
 import GallerySection from "../components/GallerySection/GallerySection";
 import TestimonialSection from "../components/CourseItem/TestimonialSection/TestimonialSection";
 import ContactSection from "../components/ContactSection/ContactSection";
+import Footer from "../components/Footer/Footer";
 function Home() {
   return (
     <div>
@@ -26,6 +27,7 @@ function Home() {
       <GallerySection/>
       <TestimonialSection/>
       <ContactSection/>
+      <Footer/>
     </div>
   );
 }

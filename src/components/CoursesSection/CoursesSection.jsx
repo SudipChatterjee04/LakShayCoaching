@@ -1,6 +1,6 @@
 import React from "react";
 import CourseItem from "../CourseItem/CourseItem";
-import myCourseImage1 from './courses-01.jpg'
+// import myCourseImage1 from './courses-01.jpg'
 
 const CoursesSection = () => {
     const coursesData = [
