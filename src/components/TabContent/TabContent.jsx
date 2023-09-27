@@ -10,6 +10,13 @@ const tabData = [
       "Welcome to Lakshyam Coaching, the premier institute dedicated to shaping the future of aspiring students in their journey towards success in competitive exams. At Lakshyam Coaching, we specialize in providing comprehensive coaching and guidance for various entrance examinations, including JEE Mains & Advance, NEET, Olympiads etc.",
   },
   {
+    id: "tabs-1",
+    imgSrc: "/my-react-app/src/assets/images/choose-us-image-01.png",
+    title: "Best Education",
+    description:
+      "Welcome to Lakshyam Coaching, the premier institute dedicated to shaping the future of aspiring students in their journey towards success in competitive exams. At Lakshyam Coaching, we specialize in providing comprehensive coaching and guidance for various entrance examinations, including JEE Mains & Advance, NEET, Olympiads etc.",
+  },
+  {
     id: "tabs-2",
     imgSrc: "/my-react-app/src/assets/images/choose-us-image-02.png",
     title: "Expert Faculty",
