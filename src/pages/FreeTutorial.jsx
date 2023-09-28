@@ -3,7 +3,7 @@ import MainBanner from '../components/Main Banner/MainBanner'
 import myVideo from '../assets/images/free-tutorial.mp4'
 import SearchSection from '../components/SearchSection/SearchSection'
 import NotesSection from '../components/NotesSection/NotesSection'
-import Footer from '../components/Footer/Footer'
+// import Footer from '../components/Footer/Footer'
 const FreeTutorial = () => {
   return (
     <div>
@@ -17,7 +17,7 @@ const FreeTutorial = () => {
       />
       <SearchSection/>
       <NotesSection/>
-      <Footer/>
+      
     </div>
   )
 }
