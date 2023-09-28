@@ -1,5 +1,5 @@
 import React from "react";
-
+import './SearchSection.css'
 // Select component
 const Select = ({ options }) => (
   <select className="round wid-full">
@@ -23,9 +23,9 @@ const SearchSection = () => {
   const classes = ["Class X", "Class XI", "Class XII"];
 
   return (
-    <section className="margin-t">
-      <div className="d-flex bd-highlight">
-        <div className="p-2 flex-fill bd-highlight">
+    <section className="courseSearch">
+      <div className="courseSearch-bars">
+        <div className="courseSearch-bars-bar">
           <Select options={mainSubjects} />
         </div>
         <div className="p-2 flex-fill bd-highlight">

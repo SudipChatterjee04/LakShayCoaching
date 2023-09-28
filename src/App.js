@@ -6,12 +6,18 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
-import Admin from "./components/Admin/Admin";
+//<<<<<<< newWorkingBranch
+//import './App.css'
+//import Footer from "./components/Footer/Footer";
+
+=======
+// import Admin from "./components/Admin/Admin";
+//>>>>>>> ME-work
 
 function App() {
 
   return (
-    <div>
+    <div className="bodyContainer">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +29,7 @@ function App() {
 
        
       </Routes>
+      {/* <Footer/> */}
     </div>
   );
 }
