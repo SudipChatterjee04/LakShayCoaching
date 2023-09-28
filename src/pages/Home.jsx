@@ -8,7 +8,7 @@ import VideoSection from "../components/VideoSection/VideoSection";
 import GallerySection from "../components/GallerySection/GallerySection";
 import TestimonialSection from "../components/CourseItem/TestimonialSection/TestimonialSection";
 import ContactSection from "../components/ContactSection/ContactSection";
-import Footer from "../components/Footer/Footer";
+
 function Home() {
   return (
     <div>
@@ -18,7 +18,8 @@ function Home() {
         heading2b="Coaching"
         videoSource={myVideo}
         buttonText="Discover more"
-        showFeaturesSection={true} // Provide buttonText prop if needed
+        showFeaturesSection={true} 
+        className = "banner-container"
       />
       <WhyGradSchool/>
       <ComingSoonSection/>
@@ -27,7 +28,7 @@ function Home() {
       <GallerySection/>
       <TestimonialSection/>
       <ContactSection/>
-      <Footer/>
+      
     </div>
   );
 }

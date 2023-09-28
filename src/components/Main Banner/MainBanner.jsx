@@ -17,8 +17,8 @@ const MainBanner = ({ heading6, heading2a, heading2b, videoSource,buttonText,sho
 
   return (
     <div>
-      <section className="section main-banner" id="top" data-section="section1">
-        <div id="bg-video">
+      <section className="section-main-banner" id="top" data-section="section1">
+        <div className="bg-video">
           <video ref={videoRef} controls loop muted>
             <source src={videoSource} type="video/mp4" />
             Your browser does not support the video tag.

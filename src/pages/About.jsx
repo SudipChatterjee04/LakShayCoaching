@@ -3,7 +3,7 @@ import MainBanner from '../components/Main Banner/MainBanner'
 import myVideo from '../assets/images/aboutus.mp4'
 import WhyGradSchool from '../components/WhyGradSchool/WhyGradSchool'
 import VideoSection from '../components/VideoSection/VideoSection'
-import Footer from '../components/Footer/Footer'
+
 const About = () => {
   return (
     <div>
@@ -17,7 +17,7 @@ const About = () => {
       />
       <WhyGradSchool/>
       <VideoSection/>
-      <Footer/>
+      
     </div>
   )
 }

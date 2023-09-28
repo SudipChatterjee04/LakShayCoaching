@@ -2,7 +2,7 @@ import React from 'react'
 import MainBanner from '../components/Main Banner/MainBanner'
 import myVideo from '../assets/images/courses.mp4'
 import CoursesSection from '../components/CoursesSection/CoursesSection'
-import Footer from '../components/Footer/Footer'
+// import Footer from '../components/Footer/Footer'
 const Courses = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Courses = () => {
         showFeaturesSection={false}
       />
       <CoursesSection/>
-      <Footer/>
+      
       </div>
   )
 }
