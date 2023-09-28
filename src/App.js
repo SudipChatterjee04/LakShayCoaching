@@ -6,13 +6,6 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
-//<<<<<<< newWorkingBranch
-//import './App.css'
-//import Footer from "./components/Footer/Footer";
-
-=======
-// import Admin from "./components/Admin/Admin";
-//>>>>>>> ME-work
 
 function App() {
 
@@ -29,7 +22,6 @@ function App() {
 
        
       </Routes>
-      {/* <Footer/> */}
     </div>
   );
 }
