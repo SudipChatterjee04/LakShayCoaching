@@ -6,9 +6,6 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
-import './App.css'
-import Footer from "./components/Footer/Footer";
-
 
 function App() {
 
@@ -19,12 +16,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/freetutorial" element={< FreeTutorial/>} />
+        <Route path="/freetutorial" element={<FreeTutorial/>} />
         <Route path="/courses" element={<Courses />} />
-        
+        <Route path="/login" element={<Admin/>} />
+
        
       </Routes>
-      <Footer/>
     </div>
   );
 }

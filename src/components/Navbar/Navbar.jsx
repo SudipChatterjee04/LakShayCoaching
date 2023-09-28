@@ -39,9 +39,9 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="tel:+918001100314" target="/" style={{ backgroundColor: '#3fe503dd' }}>
-              Call Now
-            </a>
+            <Link to={'/login'} style={{ backgroundColor: '#3fe503dd' }}>
+              Login
+            </Link>
           </li>
         </ul>
       </nav>
