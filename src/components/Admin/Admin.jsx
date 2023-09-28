@@ -1,6 +1,8 @@
 import { Box, Modal, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 import React from 'react'
 import './Admin.css'
+import { useState } from 'react'
 
 const Admin = () => {
     const style = {
@@ -23,6 +25,10 @@ const Admin = () => {
     const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+
 
 
 
@@ -59,11 +65,20 @@ const Admin = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <input type="text" placeholder='UserName' style={{height:30}} />
-          <input type="text" placeholder='Password' style={{height:30}} />
-          <button style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3}}>
+          <input onChange={(e)=>{setUsername(e.target.value)}} id='username' type="text" placeholder='UserName' style={{height:30}} />
+          <input onChange={(e)=>{setPassword(e.target.value)}} id='password' type="text" placeholder='Password' style={{height:30}} />
+          {
+            (username==='username' && password==='password')?
+           
+          <Link to={'/superadmin'} style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3 , textDecoration:"none" , textAlign:"center", fontStyle:"normal"}}>
+            Login
+          </Link> :
+         <button style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3,fontStyle:"normal"}}>
             Login
           </button>
+
+
+          }
         </Box>
       </Modal>
 

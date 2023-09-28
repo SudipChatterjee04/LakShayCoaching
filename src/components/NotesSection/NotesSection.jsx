@@ -11,7 +11,6 @@ const NoteCard = ({ imgSrc, title, description }) => {
   const handleClick = () => {
     // Add your click handling logic here
     // For example, you can open a modal or navigate to a new page
-    console.log("Card clicked!");
   };
 
   return (
