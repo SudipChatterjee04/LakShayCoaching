@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
+import Admin from "./components/Admin/Admin";
 
 function App() {
 
