@@ -6,8 +6,8 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
-// import './App.css'
-// import Footer from "./components/Footer/Footer";
+import './App.css'
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         
        
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
