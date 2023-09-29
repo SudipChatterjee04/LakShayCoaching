@@ -7,7 +7,7 @@ import './ComingSoonSection.css'
 const ComingSoonSection = () => {
   return (
     <section className="section coming-soon" data-section="section3">
-      <div className="container">
+      <div className="container" style={{width:"80%"}}>
         <div className="row">
           <div className="col-md-7 col-xs-12">
             <div className="continer centerIt">
@@ -17,7 +17,7 @@ const ComingSoonSection = () => {
               <CountdownTimer />
             </div>
           </div>
-          <div className="registration">
+          <div className="registration" style={{width:"auto"}}>
             <RegistrationForm />
           </div>
         </div>

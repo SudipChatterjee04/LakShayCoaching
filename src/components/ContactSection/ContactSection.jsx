@@ -6,7 +6,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import './ContactSection.css'
 const ContactSection = () => {
   return (
-    <section className="section contact" data-section="section6">
+    <section className="section contact" data-section="section6" style={{backgroundColor:"rgb(23, 34, 56)"}}>
       <div className="container">
         <SectionHeading title="Let’s Keep In Touch" />
 

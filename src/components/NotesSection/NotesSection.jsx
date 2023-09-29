@@ -27,7 +27,7 @@ const NoteCard = ({key, imgSrc, title, pdf }) => {
         alt=""
       />
       <div className="">
-        <h4 style={{paddingLeft:20}}>{title}</h4>
+        <h4 style={{paddingLeft:20, color:"white"}}>{title}</h4>
       </div>
     </div>
   );
@@ -75,7 +75,7 @@ const NoteCard = ({key, imgSrc, title, pdf }) => {
           <div className="col-lg-8 col-sm-10">
           {/* {notes.map()} */}
             {
-              (showImg==='')?<div style={{ width: "100%", height: "60vh" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
+              (showImg==='')?<div style={{ width: "100%", height: "60vh", color:"white" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
               Please Select a Pdf From The List IN Right
               </div>
               :

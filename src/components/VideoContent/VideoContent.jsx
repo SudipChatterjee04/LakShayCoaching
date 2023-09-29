@@ -4,11 +4,11 @@ const VideoContent = () => {
   return (
     <div className="col-md-6 align-self-center">
       <div className="left-content">
-        <span>our presentation is for you</span>
-        <h4>
+        <span style={{color:"white"}}>our presentation is for you</span>
+        <h4 style={{color:"white"}}>
           Watch the video to learn more <em>about Lakshyam Coaching</em>
         </h4>
-        <p>
+        <p style={{color:"white"}}>
           Welcome to Lakshyam Coaching, the premier institute dedicated to
           shaping the future of aspiring students in their journey towards
           success in competitive exams. <br /><br />At Lakshyam Coaching, we

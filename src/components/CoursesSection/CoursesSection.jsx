@@ -16,37 +16,37 @@ const CoursesSection = () => {
 
   const coursesData = [
     {
-      imgSrc: {img_1},
+      imgSrc: img_1,
       title: "Tutorials",
       description:
         "We provide complete step-by-step guidance to walk you through, to accomplish different tasks.",
     },
     {
-      imgSrc: {img_2},
+      imgSrc: img_2,
       title: "Home Tuitions",
       description:
         "We provide personalized training services for students from certified tutors right at your home.",
     },
     {
-      imgSrc: {img_3},
+      imgSrc: img_3,
       title: "Live Courses",
       description:
         "We undertake services such as motivational result-driven classes and stress-releasing sessions.",
     },
     {
-      imgSrc: {img_4},
+      imgSrc: img_4,
       title: "Online Tutorials",
       description:
         "We have expert & experienced faculty members who provide online tutoring for kids to learn online.",
     },
     {
-      imgSrc: {img_5},
+      imgSrc: img_5,
       title: "Competitive Exams",
       description:
         "We have vastly experienced staff members who will ensure your success in various competitive exams.",
     },
     {
-      imgSrc: {img_1},
+      imgSrc: img_1,
       title: "Institute for Commerce",
       description:
         "Now study Commerce from any of our esteemed institutes & pass out with flying colors & a stable job in hand.",
@@ -58,19 +58,19 @@ const CoursesSection = () => {
         "We have experienced teachers to teach students of class XII commerce so that they learn from the basics.",
     },
     {
-      imgSrc: img_3,
+      imgSrc: img_4,
       title: "Foundation Courses",
       description:
         "In this course structure, students of school levels, up to class X, are rendered coaching in all subjects.",
     },
     {
-      imgSrc: img_4,
+      imgSrc: img_5,
       title: "Medical Courses",
       description:
         "Students of classes XI and XII are prepared for entrances. Also, medical students are given regular coaching.",
     },
     {
-      imgSrc: img_5,
+      imgSrc:img_3 ,
       title: "Engineering Courses",
       description:
         "Students of classes XI and XII are prepared for entrances. Also, engineering students are given regular coaching.",

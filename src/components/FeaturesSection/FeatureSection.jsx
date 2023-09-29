@@ -11,8 +11,8 @@ const FeaturesSection = () => {
       <div className="feature-main-container">
         {data.map((card) => (
           <div className="feature-main-container-sub" key={card.id}>
-            <div style={{ height: "20px", border: "2px solid red", display:'flex' }}>
-              <div style={{ border: "2px solid red" }}>
+            <div style={{ height: "20px", display:'flex' }}>
+              <div style={{ }}>
                 <i className={card?.iconClass}></i>
               </div>
               <p className="feature-main-container-sub-p1">{card?.title}</p>

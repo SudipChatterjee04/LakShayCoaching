@@ -6,7 +6,8 @@ import ComingSoonSection from "../components/ComingSoonSection/ComingSoonSection
 import CoursesSection from "../components/CoursesSection/CoursesSection";
 import VideoSection from "../components/VideoSection/VideoSection";
 import GallerySection from "../components/GallerySection/GallerySection";
-import TestimonialSection from "../components/CourseItem/TestimonialSection/TestimonialSection";
+// import TestimonialSection from "../components/CourseItem/TestimonialSection/TestimonialSection";
+import  Testimonials  from "../components/Testimonials/Testimonials";
 import ContactSection from "../components/ContactSection/ContactSection";
 
 function Home() {
@@ -26,7 +27,8 @@ function Home() {
       <CoursesSection/>
       <VideoSection/>
       <GallerySection/>
-      <TestimonialSection/>
+      {/* <TestimonialSection/> */}
+      <Testimonials/>
       <ContactSection/>
       
     </div>

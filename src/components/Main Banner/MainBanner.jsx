@@ -27,8 +27,8 @@ const MainBanner = ({ heading6, heading2a, heading2b, videoSource,buttonText,sho
 
         <div className="video-overlay header-text">
           <div className="caption">
-            <h6>{heading6}</h6>
-            <h2>
+            <h6 style={{color:"white"}}>{heading6}</h6>
+            <h2 style={{color:"white"}}>
               <em>{heading2a}</em> {heading2b}
             </h2>
             {buttonText && ( // Conditionally render the button if buttonText is provided

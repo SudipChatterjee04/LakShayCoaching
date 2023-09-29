@@ -85,7 +85,7 @@ function NoteForm() {
   Please Wait Your File is Uploading......
   <CircularProgress/>
   </div> : null}
-  <ToastContainer/>
+  {/* <ToastContainer/> */}
 
       <div className="form-container">
       <form onSubmit={handleSubmit}>
