@@ -44,6 +44,8 @@ function NoteForm() {
   // Handle form submission
   const handleSubmit =async (e) => {
     e.preventDefault();
+    setLoading(true)
+
     // Handle form submission here (e.g., send the data to the server)
     console.log({ title, subject, classValue, batch, image, pdf, course });
     try {
@@ -75,6 +77,7 @@ function NoteForm() {
     toast.success('Form submitted', {
       position: toast.POSITION.TOP_CENTER
   });
+  setLoading(false)
 
   };
   
