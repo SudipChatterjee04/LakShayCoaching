@@ -15,7 +15,7 @@ const FreeTutorial = () => {
         // buttonText="Discover more" // Provide buttonText prop if needed
         showFeaturesSection={false}
       />
-      <SearchSection/>
+      {/* <SearchSection/> */}
       <NotesSection/>
       
     </div>
