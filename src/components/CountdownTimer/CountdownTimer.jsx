@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import './CountdownTimer.css'
 const CountdownTimer = () => {
   const [countdown, setCountdown] = useState({
     days: 0,

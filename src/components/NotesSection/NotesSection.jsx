@@ -1,5 +1,6 @@
 import React from "react";
-
+import './NotesSection.css';
+import img_1 from "./campaign-creators-gMsnXqILjp4-unsplash.jpg"
 // NoteCard component
 
 
@@ -50,11 +51,11 @@ const NoteList = ({ notes }) => (
 const NotesSection = () => {
   const notes = [
     {
-      imgSrc: "./images/campaign-creators-gMsnXqILjp4-unsplash.jpg",
+      imgSrc: "./campaign-creators-gMsnXqILjp4-unsplash.jpg",
       title: "Math Chapter 1",
       description: "Here you will get the complete PDF of this chapter.",
     },
-    // Add more note objects as needed
+   
   ];
 
   return (
@@ -62,10 +63,11 @@ const NotesSection = () => {
       <div className="contain">
         <div className="row tut__container">
           <div className="col-lg-8 col-sm-10">
+          {/* {notes.map()} */}
             <img
               id="targetedImg"
-              style={{ width: "100%", height: "60vh" }}
-              src="./images/campaign-creators-gMsnXqILjp4-unsplash.jpg"
+              style={{ width: "100%", height: "60vh"}}
+              src={img_1}
               alt=""
             />
             <div className="padding-top-bot2">

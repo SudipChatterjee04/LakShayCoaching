@@ -2,7 +2,7 @@ import React from "react";
 
 import RegistrationForm from "../RegistrationForm/RegistrationForm";
 import CountdownTimer from "../CountdownTimer/CountdownTimer";
-
+import './ComingSoonSection.css'
 
 const ComingSoonSection = () => {
   return (
@@ -17,7 +17,7 @@ const ComingSoonSection = () => {
               <CountdownTimer />
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="registration">
             <RegistrationForm />
           </div>
         </div>
