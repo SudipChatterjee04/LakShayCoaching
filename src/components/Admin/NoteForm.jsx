@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import your CSS file
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { CircularProgress } from '@mui/material';
 
 function NoteForm() {
@@ -85,7 +85,8 @@ function NoteForm() {
   Please Wait Your File is Uploading......
   <CircularProgress/>
   </div> : null}
-    
+  <ToastContainer/>
+
       <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
