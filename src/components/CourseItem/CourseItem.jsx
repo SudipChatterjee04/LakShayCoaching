@@ -1,5 +1,5 @@
 import React from "react";
-
+import './CourseItem.css';
 const CourseItem = ({ imgSrc, title, description }) => {
   return (
     <div className="item">
