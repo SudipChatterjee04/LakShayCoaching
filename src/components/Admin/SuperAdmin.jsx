@@ -13,7 +13,7 @@ const SuperAdmin = () => {
     setNoteView('notetable')
 
     try {
-        const response = await fetch('http://localhost:8080/getnote/', {
+        const response = await fetch('https://lakshyam.onrender.com/getnote/', {
           method: "GET",
           headers: {
             Accept: 'application/json',

@@ -49,7 +49,7 @@ function NoteForm() {
     // Handle form submission here (e.g., send the data to the server)
     console.log({ title, subject, classValue, batch, image, pdf, course });
     try {
-      const res = await fetch(`http://localhost:8080/getnote/`, {
+      const res = await fetch(`https://lakshyam.onrender.com/getnote/`, {
         method: "POST",
         headers: {
           Accept: 'application/json',

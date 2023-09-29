@@ -67,7 +67,7 @@ const NoteTable = (props) => {
         const key = JSON.parse(id)
   
         try {
-          const response = await fetch(`http://localhost:8080/getnote/${key}`, {
+          const response = await fetch(`https://lakshyam.onrender.com/getnote/${key}`, {
             method: "DELETE",
             headers: {
               Accept: 'application/json',
@@ -87,7 +87,7 @@ const NoteTable = (props) => {
       const updateList = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch(`http://localhost:8080/getnote/${updateId}`, {
+          const response = await fetch(`https://lakshyam.onrender.com/getnote/${updateId}`, {
             method: "PUT",
             headers: {
               Accept: 'application/json',
