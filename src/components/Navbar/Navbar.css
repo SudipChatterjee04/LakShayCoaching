@@ -1,7 +1,7 @@
 .main-header {
     background-color: rgba(22,34,57,1);
-    height: 60px;
-    position: fixed;
+    height: 80px;
+    position: sticky;
     z-index: 12;
     width: 100%;
     top: 0;

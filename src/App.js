@@ -8,6 +8,7 @@ import FreeTutorial from "./pages/FreeTutorial";
 import Navbar from "./components/Navbar/Navbar";
 import Admin from "./components/Admin/Admin";
 import Footer from "./components/Footer/Footer";
+
 function App() {
 
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/freetutorial" element={<FreeTutorial/>} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<Admin/>} />
+
+       
       </Routes>
       <Footer/>
     </div>
