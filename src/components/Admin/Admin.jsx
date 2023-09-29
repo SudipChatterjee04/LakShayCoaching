@@ -1,4 +1,4 @@
-import { Box, Modal, Typography } from '@mui/material'
+import { Box, Modal } from '@mui/material'
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './Admin.css'

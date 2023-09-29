@@ -1,4 +1,4 @@
-import { Box, Button, Hidden, Modal } from '@mui/material'
+import { Box, Button, CircularProgress, Modal } from '@mui/material'
 import React, { useState } from 'react'
 import  './Table.css'
 import './Form.css'
@@ -14,9 +14,11 @@ const NoteTable = (props) => {
   const [course, setCourse] = useState('');
   const [modal, setModal] = useState(false);
   const [updateId, setUpdateId] = useState("");
+  const [loading, setLoading] = useState(false)
 
 
   const uploadFiles = async(e ) => {
+    setLoading(true)
     const {files} = e.target
 
     const data = new FormData();
@@ -39,6 +41,7 @@ const NoteTable = (props) => {
             .catch((err) => {
               console.log(err);
             });
+            setLoading(false)
   }
 
   const handleCustomerClose = () => setModal(false);
@@ -200,6 +203,11 @@ const NoteTable = (props) => {
   p: 4,
   overflowY:"scroll"
 }}>
+  {loading ? <div className="loader"> 
+  Please Wait Your File is Uploading......
+  <CircularProgress/>
+  </div> : null}
+
 <div className="form-container">
       <form onSubmit={updateList} >
         <div className="form-group">

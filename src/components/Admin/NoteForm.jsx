@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import your CSS file
 import { toast } from 'react-toastify';
+import { CircularProgress } from '@mui/material';
 
 function NoteForm() {
   // Define state variables for form inputs
@@ -11,11 +12,12 @@ function NoteForm() {
   const [image, setImage] = useState('');
   const [pdf, setPdf] = useState('');
   const [course, setCourse] = useState('');
+  const [loading, setLoading] = useState(false)
+
 
   const uploadFiles = async(e ) => {
     const {files} = e.target
-    
-
+    setLoading(true)
     const data = new FormData();
             data.append("file" , files[0]);
             data.append("upload_preset" , "solardealership");
@@ -36,6 +38,7 @@ function NoteForm() {
             .catch((err) => {
               console.log(err);
             });
+            setLoading(false)
   }
 
   // Handle form submission
@@ -77,7 +80,13 @@ function NoteForm() {
   
 
   return (
-    <div className="form-container">
+    <>
+    {loading ? <div className="loader"> 
+  Please Wait Your File is Uploading......
+  <CircularProgress/>
+  </div> : null}
+    
+      <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Title:</label>
@@ -117,6 +126,7 @@ function NoteForm() {
         <button type="submit">Submit</button>
       </form>
     </div>
+    </>
   );
 }
 
