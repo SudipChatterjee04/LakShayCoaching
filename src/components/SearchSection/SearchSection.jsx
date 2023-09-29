@@ -28,13 +28,13 @@ const SearchSection = () => {
         <div className="courseSearch-bars-bar">
           <Select options={mainSubjects} />
         </div>
-        <div className="p-2 flex-fill bd-highlight">
+        <div className="courseSearch-bars-bar">
           <SearchInput />
         </div>
-        <div className="p-2 flex-fill bd-highlight">
+        <div className="courseSearch-bars-bar">
           <Select options={subSubjects} />
         </div>
-        <div className="p-2 flex-fill bd-highlight">
+        <div className="courseSearch-bars-bar">
           <Select options={classes} />
         </div>
       </div>

@@ -5,14 +5,14 @@
     z-index: 12;
     width: 100%;
     top: 0;
-    border: red solid;
+    /* border: red solid; */
 }
 .main-header .logo {
     float: left;
     /* line-height: 60px; */
     padding: auto;
     padding-left: 60px;
-    border: red solid;
+    /* border: red solid; */
 }
 
 
@@ -119,13 +119,13 @@
 }
 
 .main-menu li .sub-menu li a:hover {
-    color: #f5a425;
+    color: #25f53a;
     border: none;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    border: 2px solid #f5a425;
+    border: 2px solid #25f53a;
 }
 
 @media (max-width: 950px) {
