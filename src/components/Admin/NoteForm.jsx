@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import your CSS file
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { CircularProgress } from '@mui/material';
 
 function NoteForm() {

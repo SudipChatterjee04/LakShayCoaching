@@ -1,7 +1,6 @@
 import React from 'react'
 import MainBanner from '../components/Main Banner/MainBanner'
 import myVideo from '../assets/images/free-tutorial.mp4'
-import SearchSection from '../components/SearchSection/SearchSection'
 import NotesSection from '../components/NotesSection/NotesSection'
 
 const FreeTutorial = () => {
