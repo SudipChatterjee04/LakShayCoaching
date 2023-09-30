@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Form.css'; // Import your CSS file
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { CircularProgress } from '@mui/material';
+import 'react-toastify/dist/ReactToastify.css';
 
 function NoteForm() {
   // Define state variables for form inputs
@@ -44,7 +45,7 @@ function NoteForm() {
   // Handle form submission
   const handleSubmit =async (e) => {
     e.preventDefault();
-    setLoading(true)
+    // setLoading(true)
 
     // Handle form submission here (e.g., send the data to the server)
     console.log({ title, subject, classValue, batch, image, pdf, course });
@@ -77,18 +78,18 @@ function NoteForm() {
     toast.success('Form submitted', {
       position: toast.POSITION.TOP_CENTER
   });
-  setLoading(false)
+  // setLoading(false)
 
   };
   
 
   return (
     <>
-    {loading ? <div className="loader"> 
+    {loading ? <div className="loader" style={{color:"black"}}> 
   Please Wait Your File is Uploading......
   <CircularProgress/>
   </div> : null}
-  {/* <ToastContainer/> */}
+  <ToastContainer/>
 
       <div className="form-container">
       <form onSubmit={handleSubmit}>

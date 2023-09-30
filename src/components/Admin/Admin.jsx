@@ -70,10 +70,10 @@ const Admin = () => {
           {
             (username==='username' && password==='password')?
            
-          <Link to={'/superadmin'} style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3 , textDecoration:"none" , textAlign:"center", fontStyle:"normal"}}>
+          <Link to={'/superadmin'} style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3 , textDecoration:"none" , textAlign:"center", fontStyle:"normal", fontWeight:"bold"}}>
             Login
           </Link> :
-         <button style={{backgroundColor:"blue" , height:30 , width:70, color:"white" , border:"none" , borderRadius:3,fontStyle:"normal"}}>
+         <button style={{backgroundColor:"blue" , height:40 , width:70, color:"white" , border:"none" , borderRadius:3,fontStyle:"normal" , fontWeight:"bold"}}>
             Login
           </button>
 

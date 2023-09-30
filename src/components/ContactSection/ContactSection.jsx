@@ -10,7 +10,7 @@ const ContactSection = () => {
       <div className="container">
         <SectionHeading title="Let’s Keep In Touch" />
 
-        <div className="row">
+        <div className="row" style={{justifyContent:"center"}}>
           <ContactInfo />
           <ContactForm />
         </div>

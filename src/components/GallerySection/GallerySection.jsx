@@ -14,8 +14,8 @@ const GallerySection = () => {
         <div className="container">
           <SectionHeading title="Students Gallery" />
 
-          <div className="row g-3">
-            <div className="component1">
+          <div className="row g-3" style={{justifyContent:"center"}}>
+            <div className="component1" style={{width:"38%"}}>
               <div className="component1-1">
                 <div className="img-1">
                   <GalleryItem imgSrc={img_1} delay="0.1s" />
@@ -35,7 +35,7 @@ const GallerySection = () => {
                 </div>
               </div>
             </div>
-            <div className="component-2">
+            <div className="component-2" style={{width:"auto" , marginTop:40}}>
               <div className="img-4">
                 {/* <GalleryItem
                 imgSrc={img_4}

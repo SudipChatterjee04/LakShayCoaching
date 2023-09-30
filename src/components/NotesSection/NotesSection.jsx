@@ -12,6 +12,7 @@ const NotesSection = () => {
   const [noteList, setNoteList] = useState([]);
   const [showImg, setShowImg] = useState('');
   const [showPdf, setShowPdf] = useState('');
+  const [title, setTitle] = useState('')
 
 
   
@@ -19,7 +20,7 @@ const NoteCard = ({key, imgSrc, title, pdf }) => {
   // Define a click handler function
   
   return (
-    <div id={key} onClick={()=>{setShowImg(imgSrc); setShowPdf(pdf)}} style={{width:"100%" , height:100 , display:"flex" , alignItems:"center", cursor:"pointer"}}>
+    <div id={key} onClick={()=>{setShowImg(imgSrc); setShowPdf(pdf); setTitle(title)}} style={{width:"100%" , height:100 , display:"flex" , alignItems:"center", cursor:"pointer"}}>
       <img
         style={{}}
         className="side-logo-img align-left"
@@ -87,7 +88,7 @@ const NoteCard = ({key, imgSrc, title, pdf }) => {
             />
             }
             <div className="padding-top-bot2">
-              <h3>Math Chapter Integration</h3>
+              <h3>{title}</h3>
               <span>Download Notes Here</span>
               <button className="btn">
                 <a onClick={()=>{console.log(showPdf)}} href={showPdf} target="_blank"  rel="noreferrer" style={{textDecoration:"none" , fontWeight:"bold"}}>

@@ -65,6 +65,9 @@ const NoteTable = (props) => {
 
     const handleDelete = async(id) =>{
         const key = JSON.parse(id)
+        console.log('====================================');
+        console.log(key);
+        console.log('====================================');
   
         try {
           const response = await fetch(`https://lakshyam.onrender.com/getnote/${key}`, {
@@ -76,9 +79,12 @@ const NoteTable = (props) => {
           });
   
           await response.json();
+          console.log('====================================');
+          console.log(response);
+          console.log('====================================');
   
-          props.setNoteList( [...props.noteList.filter(item => item._id !== id)]);
-          window.location.reload(true);
+          props.setNoteList( [...props.noteList.filter(item => item._id !== key)]);
+          // window.location.reload(true);
         } catch (err) {
           console.log(err);
         }
@@ -122,48 +128,48 @@ const NoteTable = (props) => {
       
   return (
     <>
-        <div style={{width:"85%", overflowX:"scroll"}}>
+        <div style={{width:"85%", overflowX:"scroll", padding:10}}>
         <table >
       <tbody>
       {
-        <tr>
-        <th>Title</th>
-        <th>Subject</th>
-        <th>Class</th>
-        <th>Batch</th>
-        <th>Image</th>
-        <th>Pdf</th>
-        <th>Course</th>
-        <th>Buttons</th>
+        <tr >
+        <th style={{border:"1px solid black", padding:5}}>Title</th>
+        <th style={{border:"1px solid black", padding:5}}>Subject</th>
+        <th style={{border:"1px solid black", padding:5}}>Class</th>
+        <th style={{border:"1px solid black", padding:5}}>Batch</th>
+        <th style={{border:"1px solid black", padding:5}}>Image</th>
+        <th style={{border:"1px solid black", padding:5}}>Pdf</th>
+        <th style={{border:"1px solid black", padding:5}}>Course</th>
+        <th style={{border:"1px solid black", padding:5}}>Buttons</th>
       </tr>
       }
       {props.noteList.map(
         (item) => (
 
-          <tr key={item._id}>
-              <td>
+          <tr style={{border:"1px solid black", padding:5}} key={item._id} onClick={()=>{console.log(item._id)}}>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteTitle}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteSubject}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteClass}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteBatch}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteImage}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.notePdf}
               </td>
-              <td>
+              <td style={{border:"1px solid black" , padding:5}}>
               {item.noteCourse}
               </td>
-              <td>
-                <Button variant='contained' color='error' size='small' onClick={() => handleDelete(JSON.stringify(item._id))} >
+              <td style={{border:"1px solid black" , padding:5}}>
+                <Button style={{marginBottom:5}} variant='contained' color='error' size='small' onClick={() => handleDelete(JSON.stringify(item._id))} >
                   Delete
                 </Button>
                 <Button variant='contained' color='success' size='small' onClick={()=>CustomerModalOpen(

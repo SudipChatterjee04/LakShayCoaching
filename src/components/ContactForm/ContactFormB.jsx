@@ -33,8 +33,8 @@ const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlaceholder }) 
   return (
     <div className="col-md-6">
       <form id="contact" onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-        <div className="row">
-          <div className="col-md-6">
+        <div className="row" style={{display:"flex" , justifyContent:"center" , alignItems:"center"}}>
+          <div className="col-md-5">
             <fieldset>
               <input
                 name="name"
@@ -49,7 +49,7 @@ const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlaceholder }) 
             </fieldset>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-5">
             <fieldset>
               <input
                 name="email"
@@ -64,7 +64,7 @@ const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlaceholder }) 
             </fieldset>
           </div>
 
-          <div className="col-md-12">
+          <div className="col-md-10">
             <fieldset>
               <textarea
                 name="message"
@@ -75,11 +75,12 @@ const ContactForm = ({ namePlaceholder, emailPlaceholder, messagePlaceholder }) 
                 required=""
                 value={formData.message}
                 onChange={handleChange}
+                style={{margin:"auto"}}
               ></textarea>
             </fieldset>
           </div>
 
-          <div className="col-md-12">
+          <div className="col-md-10">
             <fieldset>
               <button type="submit" id="form-submit" className="button">
                 Send Message Now

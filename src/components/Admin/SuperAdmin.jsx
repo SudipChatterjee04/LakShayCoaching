@@ -41,7 +41,7 @@ const SuperAdmin = () => {
   return (
     <>
       
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex" , backgroundColor:('rgba(22,34,57,0.85)'), color:"white"}}>
         <div style={{ width:"15%", height:"92vh",display:"flex",flexDirection:"column",marginTop:5}}>
         
         <div onClick={(e)=>{setNoteView('noteform')}} style={{padding:10, cursor:"pointer"}} className='note__btn'>
