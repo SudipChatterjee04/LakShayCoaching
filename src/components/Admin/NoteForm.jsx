@@ -3,6 +3,7 @@ import './Form.css'; // Import your CSS file
 import { ToastContainer, toast } from 'react-toastify';
 import { CircularProgress } from '@mui/material';
 import 'react-toastify/dist/ReactToastify.css';
+import backend from '../../backend';
 
 function NoteForm() {
   // Define state variables for form inputs
@@ -50,7 +51,7 @@ function NoteForm() {
     // Handle form submission here (e.g., send the data to the server)
     console.log({ title, subject, classValue, batch, image, pdf, course });
     try {
-      const res = await fetch(`https://lakshyam.onrender.com/getnote/`, {
+      const res = await fetch(`${backend}getnote/`, {
         method: "POST",
         headers: {
           Accept: 'application/json',

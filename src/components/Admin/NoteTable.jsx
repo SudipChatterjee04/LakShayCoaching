@@ -2,7 +2,7 @@ import { Box, Button, CircularProgress, Modal } from '@mui/material'
 import React, { useState } from 'react'
 import  './Table.css'
 import './Form.css'
-
+import backend from '../../backend'
 const NoteTable = (props) => {
 
     const [title, setTitle] = useState('');
@@ -66,11 +66,11 @@ const NoteTable = (props) => {
     const handleDelete = async(id) =>{
         const key = JSON.parse(id)
         console.log('====================================');
-        console.log(key);
+        console.log(key,id);
         console.log('====================================');
   
         try {
-          const response = await fetch(`https://lakshyam.onrender.com/getnote/${key}`, {
+          const response = await fetch(`${backend}getnote/${key}`, {
             method: "DELETE",
             headers: {
               Accept: 'application/json',
@@ -83,7 +83,7 @@ const NoteTable = (props) => {
           console.log(response);
           console.log('====================================');
   
-          props.setNoteList( [...props.noteList.filter(item => item._id !== key)]);
+          props.setNoteList( [...props.noteList.filter(item => item._id !== id)]);
           // window.location.reload(true);
         } catch (err) {
           console.log(err);
@@ -93,7 +93,7 @@ const NoteTable = (props) => {
       const updateList = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch(`https://lakshyam.onrender.com/getnote/${updateId}`, {
+          const response = await fetch(`${backend}getnote/${updateId}`, {
             method: "PUT",
             headers: {
               Accept: 'application/json',

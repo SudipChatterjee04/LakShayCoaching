@@ -2,6 +2,7 @@ import { Divider } from '@mui/material'
 import React, { useState } from 'react'
 import NoteForm from './NoteForm'
 import NoteTable from './NoteTable'
+import backend from '../../backend'
 
 const SuperAdmin = () => {
 
@@ -13,7 +14,7 @@ const SuperAdmin = () => {
     setNoteView('notetable')
 
     try {
-        const response = await fetch('https://lakshyam.onrender.com/getnote/', {
+        const response = await fetch(`${backend}getnote/`, {
           method: "GET",
           headers: {
             Accept: 'application/json',

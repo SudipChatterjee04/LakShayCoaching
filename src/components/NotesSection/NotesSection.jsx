@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './NotesSection.css';
+import backend from "../../backend";
 // NoteCard component
 
 
@@ -39,7 +40,7 @@ const NoteCard = ({key, imgSrc, title, pdf }) => {
   const handleNoteTable = async() => {
 
     try {
-        const response = await fetch('https://lakshyam.onrender.com/getnote/', {
+        const response = await fetch(`${backend}getnote/`, {
           method: "GET",
           headers: {
             Accept: 'application/json',

@@ -22,12 +22,10 @@ const deleteNote = asyncHandler(async(req , res) => {
     console.log(req.params.id)
     if(!note){
         res.status(404);
-        throw new Error("Contact not found")
+        throw new Error("Contact not found");
     }
 
-    await noteModels.findOneAndDelete(
-        req.params.id
-    )
+    await noteModels.deleteOne({_id:req.params.id})
     res.status(200).json(note);
 })
 
